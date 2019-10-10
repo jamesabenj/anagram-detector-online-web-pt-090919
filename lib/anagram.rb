@@ -10,7 +10,7 @@ end
 
 def match(anagrams)
   anagram = []
- anagrams.split.each do |words|
+ anagrams.each do |words|
  array = @word.chars & words.chars
  if array.size == words.length 
    anagram << words

@@ -12,7 +12,7 @@ def match(anagrams)
   anagram = []
  anagrams.each do |words|
  array = @word.chars & words.chars
- if array.size == @word.length 
+ if array.size == words.length 
    anagram << words
    binding.pry
     end 

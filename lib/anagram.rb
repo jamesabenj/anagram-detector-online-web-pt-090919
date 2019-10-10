@@ -14,6 +14,7 @@ def match(anagrams)
  array = @word.each_char & words.each_char
  if array.size == words.length 
    anagram << words
+   binding.pry 
     end 
   end 
   anagram 

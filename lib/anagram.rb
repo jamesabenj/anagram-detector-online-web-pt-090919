@@ -11,7 +11,7 @@ end
 def match(anagrams)
   anagram = []
  anagrams.each do |words|
- array = @word.chars & words.chars
+ array = @word.each_chars & words.each_chars
  if array.size == words.length 
    anagram << words
     end 

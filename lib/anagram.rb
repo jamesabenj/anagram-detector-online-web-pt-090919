@@ -14,7 +14,6 @@ def match(anagrams)
  array = @word.chars + words.chars
    anagram << words
    binding.pry 
-    end 
   end 
   anagram 
 end

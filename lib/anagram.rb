@@ -14,7 +14,6 @@ def match(anagrams)
  array = @word.chars + words.chars
    array.all? {|char| char.count == 2}
    anagram << words 
-   end 
   end 
   anagram 
 end

@@ -12,7 +12,7 @@ def match(anagrams)
   anagram = []
  anagrams.each do |words|
  array = @word.chars + words.chars
-   if array.uniq.join == @word 
+   array.all? {|char| char.count == 2}
    anagram << words 
    end 
   end 

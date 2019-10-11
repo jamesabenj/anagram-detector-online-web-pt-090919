@@ -11,8 +11,7 @@ end
 def match(anagrams)
   anagram = []
  anagrams.each do |words|
- array = @word.chars + words.chars
-   array.all
+ @word.chars.sort == words.chars.sort
    anagram << words 
   end 
   anagram 

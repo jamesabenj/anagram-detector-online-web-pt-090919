@@ -13,6 +13,7 @@ def match(anagrams)
  anagrams.each do |words|
  if @word.chars.sort == words.chars.sort
    anagram << words 
+    end 
   end 
   anagram 
 end
